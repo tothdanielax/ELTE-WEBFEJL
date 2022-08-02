@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rólunk - Novin</title>
+
+    <link rel="icon" href="./photos/favicon.ico">
+    <link rel="stylesheet" href="./stlye.css">
+
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        var str = "Click on button to change the background color";
+
+        el_up.innerHTML = str;
+
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+
+        function gfg_Run() {
+            changeColor('black');
+            el_down.innerHTML = "Az oldal háttere megváltozott.";
+        }         
+    </script>
+
+</head>
+
+<body>
+    <header id="top" class="flex">
+        <nav class="flex">
+            <img src="./photos/nav-logo.png" alt="Novin logó" class="logoimg">
+            <ul class="flex">
+                <li><a href="index.html" >Kezdőlap</a></li>
+                <li><a href="szolg.html">Szolgáltatások</a></li>
+                <li><a href="rolunk.html" class="active">Rólunk</a></li>
+                <li><a href="kapcs.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#egyetem" class="blokkelkerules">Ugrás a munkalehetőségeinkre</a>
+
+    
+    <article id="rolunkforma" class="rolunk flex">
+        <img src="./photos/Rolunk/novin.png" alt="Szerverterem, a kép bal oldalán Novin felirattal, jobb oldalt a Linux logójával." class="felsőkép">
+            
+        <h1 class="h1center"> Rólunk - Novin Informatika </h1>
+
+        <hr>
+
+        <div id="jobbkepbalszoveg" class="flexx">
+            <p> 
+                Cégünk, a <i>Novin Informatikai, Kereskedelmi és Szolgáltató Betéti Társaság</i> (<strong>Novin Bt.</strong>) <strong>2006</strong>-ban alakult.
+                Költséghatékony és megbízható informatikai megoldásokat kívánunk nyújtani Ügyfeleink számára. 
+                <br><br>
+                Szakembereink széles számítógép-felhasználói tapasztalattal bíró, informatikai felsőfokú végzetséggel rendelkező
+                <strong>programozók</strong>, <strong>rendszergazdák</strong>.
+            </p>
+            <figure class="rolunkImg">
+                <img src="./photos/Kapcsolat/novin.png" alt="Novin logó. ">
+                <figcaption>Novin logó</figcaption>
+            </figure>
+        </div>
+
+        <hr>
+
+        <div id="balkepjobbszoveg" class="flexxInv">
+            <img src="./photos/Rolunk/otlet.jpg" alt="Ötletelő absztrakt emberi figura." class="rolunkImg">
+
+            <p>
+                Az irodákban számos automatizálható, leegyszerűsíthető munkafolyamat van, melyeket, ha megfelelően számítógépre
+                viszünk, <strong>időt</strong> és <strong>pénzt</strong> takaríthatunk meg.
+                <br><br>
+                Mi a hangsúlyt nem a számítógépre, inkább a megfelelő módra helyezzük. 
+            </p>
+
+                <aside>
+                    Mi sem bizonyítja ezt jobban, mint a <a href="index.html">Kezdőlapon </a> látható neves partnereink listája.
+                </aside>
+        </div>
+
+        <hr>
+
+        <div id="egyetem" class="flexx">
+            <p> 
+                Fiatal informatikus csapatunk soraiba <strong>keresünk olyan munkatársakat</strong>, akik egyetem mellett szívesen végeznének a számítástechnika minden területére kiterjedő feladatokat.
+                <br><br>
+                Megbízásaink zöme <i>Linuxos</i> környezethez köthető. A feladatok megoldása jellemzően <strong>otthonról, saját géppel</strong> történik.
+            </p>
+            <img src="./photos/Rolunk/college.jpg" alt="Laptopon, otthonról dolgozó fiatal lány. " class="rolunkImg">
+        </div>
+
+    </article>
+
+    <footer>
+        <a href="#top" class="footertop">Vissza az oldal tetejére</a>
+        <button onclick="gfg_Run()">
+            Háttérkép eltüntetése.
+        </button>
+    </footer>
+</body>
+
+</html>

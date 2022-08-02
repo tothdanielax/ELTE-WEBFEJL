@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu" xml:lang="hu">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Mi az a szerver? - Novin</title>
+</head>
+
+<body>
+    <h1>Videó leírása</h1>
+    <p style="text-align: justify;">
+        Helló mindenkinek, én Attila vagyok, ez pedig itt az <strong>envisioner.hu</strong>.
+        <br/>
+        Mai témánkban arról fogunk egy kicsit elmélkedni, hogy valójában <strong>mi is az a szerver</strong>, vagy magyarán szólva <strong>kiszolgáló</strong>.
+        Miért tartottam fontosnak egy kicsit beszélni a témáról? Szimplán azért, mert ezen a blogon azért foglalkozunk egy picit
+        <i>NAS-okkal</i>, amik végülis hálózatra csatlakoztatott szerverek. Azoknak akiknek még nincsen túl sok tapasztalatuk ezzel az
+        egész témával kapcsolatosan, nem árt tudni azt, hogy mit is jelent valójában az hogy szerver, mi az hogy szerver?
+        Fontos leszögezni, hogy ez csak egy gondolatébresztő azoknak, akik még nem tudnak a témáról túl sokat, nem tervezem azt,
+        hogy most iszonyatos mélységekig belemegyünk bármibe. 
+        <br/>
+        Tehát az első és legfontosabb dolog, amit így kérdeznék tőled, nem tudom, hogy elgondolkodtál-e már azon, hogy amikor
+        beírod a böngészőbe egy weboldalanak a címét, akkor vajon mi történik, hogyan lehet az, hogy te beírtál egy címet és
+        valami megjelenik? Most itt nem fogok elárulni nagy zsákbamacskát, az történik, hogy a háttérben van valahol a világban
+        egy számítógép, ami folyamatosan be van kapcsolva és ennek a számítógépnek az a dolga, hogy ha te 0-24-ben bármikor az ő
+        általa megosztott tartalmat megtekinteni szeretnéd, akkor ez a tartalom megjelenítésre tudjon kerülni. <i>Mondd, miért volt
+        ez a példa fontos?</i> Azért mert azt kell tudni erről az egészről elképzelni, hogy ez a számítógép ami ezt a tartalmat
+        megjeleniti egy <strong>szolgáltatást nyújt</strong>, azért hogy te webböngészni tudjál. Az internet mint fogalom úgy épült fel az elmúlt
+        évtizedekben, hogy vannak úgy nevezett <strong>kiszolgáló számítógépek</strong> szerte a világban és vannak <strong>kliens, azaz ügyfél eszközök</strong>
+        szerte a világban és úgy működik az egész szisztéma, hogy ezekre a kiszolgálókra, amelyek valamilyen szempontból valamit
+        az ügyfelek számára kiszolgálnak, ezekre a kiszolgálókra csatlakozunk és ezáltal, hogy így csatlakoztunk az <strong>ügyfél
+        eszközünkkel</strong>, ami lehet telefon, manapság már <strong>mobiltelefon, számítógép, laptop, table</strong>t bármi, meg tudunk jeleníteni egy
+        adott tartalmat. Annak fügvényében hogy ez a szerver, kiszolgáló milyen típus vagy milyen szolgáltatást nyújt, vagy hol
+        helyezkedik el, rengeteg féle képpen lehet őket csoportositani, ebbe most nem mennék bele.
+        <br/>
+        A lényeg a lényeg azt kell megjegyezni, hogy <i>egy szerver egy fajta központosított szolgáltatást biztosító általában nagy teljesítményű számítógép</i>
+        vagy <i>számítógépek összessége</i> vagy valaféle berendezés, ami által te ezeket a tartalmakat eltudod érni. Most a
+        webböngészés egy nagyon egyszerű téma, rengeteg más dologról is lehetne beszélni, vannak olyan szerverek amik azért
+        szükségesek, hogy te az internetes tartalmat meg tudd nyitni a böngésződben, ez a szervereknek egy típusa, de azt hogy
+        például te a banki adataidhoz hozzá férj, ahhoz a banknak kell lennie egy szerverének, ami bizonyos szolgáltatásokat
+        nyújt, nem csak azt az adott dolgot, hogy azt te a webböngésződön keresztül meg tudd nyitni. Ha te fájlokat szeretnél
+        átvinni valakinek, akkor van erre egy másféle <strong>protokoll</strong>, <strong>FTP</strong>-nek hívjuk. Valahol lehet indítani egy FTP szervert, amire
+        a kliensek tudnak csatlakozni és fájlokat tudnak le-föl töltögetni. Igazából rengeteg féle különböző szerver létezik már
+        a világban, olyan szinten körbejár ezen szerver-kliens struktúra, hogy valóban észre sem vesszük. Szerverek lehetnek
+        a távolban és lehetnek akár nálunk, ha én nálunk otthon elinditok egy számítógépet, ami valamiféle szolgáltatást nyújt a
+        többi számítógépnek, akkor mondhatjuk azt, hogy egy szerverem van, tehát hogyha egy bekapcsolt számítógépen tartok
+        fájlokat, majd ezen a gépen lévő fájlokat más eszközökről eltudom érni, például most a fájlmegosztást vegyük mint
+        példát, akkor itthon kicsiben egy <strong>szerver-kliens struktúrát</strong> alakítottam ki. 
+        <br/>
+        Érdekes még elmondani, hogy bármely eszköz lehet igazából szerver, amelyet úgy konfigurálunk, tehát egy otthoni helyi hálózatban te állíthatsz fel szervereket,
+        indíthatsz bizonyos szolgáltatásokat, <strong>nyomtatószerver</strong> (<i>Milyen szerver?</i> <strong>Fájlszerver</strong>). Özön dolgot feltdunék sorolni, ezt
+        elméletileg bármelyik számítógépen megcsinálhatnád, akkor is ha ez az adott számítógép nem nagyobb teljesitmenyű, mint
+        bármelyik másik, az más kérdés, hogy a szerverek általában, azért szoktak nagyobb teljesítményű számíógépes eszközök
+        lenni, mert ugye <i>egy szerverre, több kiszolgáló ilyen <strong>csillagpontos struktúra</strong> szerint csatlakozni. </i>
+        <br/>
+        Mit jelent ez?
+        Hogy ha neked van egy <strong>weboldalad,</strong> ami szerveren fut, mondjuk egy webshop üzemeltetésre kerül és erre 1000 ember
+        csatlakozik egyszerre, akkor annek az adott eszköznek tudnia kell egy bizonyos számítási teljesítménnyel rendelkezni,
+        máskülönben gondok lesznek, nem tudnak az emberek vásárolni, hibára futnak, ezért érdekes példa, hogy például
+        webszervert nem érdemes otthon a házadban kicsiben berendezni, mert ez ugye azt jelentené, hogy a te otthoni interneted
+        sávszélessége és a te otthoni számítógéped vagy szervered tudásától függ az, hogy te az adott vásárlódat kibírod-e
+        szolgálni. 
+        <br/>
+        A lényeg a lényeg, <strong>szerverek-kliensek</strong>, így épül fel manapság az internet. Ha tetszett ez a videó és szívesen hallanál
+        tőlünk a későbbiekben is Tech-okosság-hatékonyság témákkal kapcsolatban tippeket, trükkeket akkor mindenképpen tudnám
+        javasolni, hogy iratkozz fel a Youtube csatornánkra és a blogunkra, itt lent az alsó sávban mindent megtalálsz,
+        linkeket, címeket stb. Találkozunk a következő videóban. Szia.
+    </p>
+</body>
+
+</html>

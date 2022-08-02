@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Kapcsolat - Novin</title>
+
+    <link rel="icon" href="./photos/favicon.ico">
+    <link rel="stylesheet" href="./stlye.css">
+
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        var str = "Click on button to change the background color";
+
+        el_up.innerHTML = str;
+
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+
+        function gfg_Run() {
+            changeColor('black');
+            el_down.innerHTML = "Az oldal háttere megváltozott.";
+        }         
+    </script>
+
+</head>
+
+<body>
+    <header id="top" class="flex">
+        <nav class="flex">
+            <img src="./photos/nav-logo.png" alt="Novin logó" class="logoimg">
+            <ul class="flex">
+                <li><a href="index.html" >Kezdőlap</a></li>
+                <li><a href="szolg.html">Szolgáltatások</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="kapcs.html" class="active">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#kuldes" class="blokkelkerules">Ugrás a form küldésére</a>
+
+
+    <form action="mailto:tothdanielax@gmail.com?subject=formcontact" method="post" enctype="text/plain" class="flex">
+      
+        <img src="./photos/Kapcsolat/novin.png" alt="Novin logó" >
+     
+        <h1> Kapcsolatfelvétel </h1>
+    
+        <label for="fname">Vezetéknév:</label><br>
+        <input type="text" id="fname" name="fname" maxlength="20" size="20" required placeholder="Gipsz"><br><br>
+        <label for="lname">Keresztnév:</label><br>
+        <input type="text" id="lname" name="lname" maxlength="20" size="20" required placeholder="Jakab"><br><br>
+        <label for="email">E-mail cím: </label><br>
+        <input type="email" id="email" name="email" maxlength="40" size="40" required placeholder="abc@abc.hu"><br><br>
+        <label for="tel">Telefonszám: </label><br>
+        <input type="tel" id="tel" name="tel" minlength="11" maxlength="11" size="11" required
+            placeholder="36121231234"><br><br>
+    
+        <label for="megj"> Üzenet: </label> <br>
+        <textarea id="megj" name="megj" maxlength="500" rows="10" cols="60"></textarea> <br><br>
+    
+        <input type="radio" id="hirlevel" name="hirlevel" value="yeshir" checked>
+        <label for="hirlevel">Szeretnék hírlevelet kapni.</label><br>
+        <input type="radio" id="hir2" name="nohir" value="nohir">
+        <label for="hir2">Nem szeretnék hírlevelet kapni.</label><br><br>
+    
+        <input type="checkbox" id="gdprok2" name="gdpr" value="gdprok2" required>
+        <label for="gdprok2"> Elfogadom a felhasználási feltételeket. </label><br>
+    
+        <div class="flexx">
+            <input type="reset" value="Visszaállítás" id="kuldes">
+            <input type="submit" value="Elküldés" > 
+        </div>
+       
+
+    </form>
+
+    <footer>
+        <a href="#top" class="footertop">Vissza az oldal tetejére</a>
+        <button onclick="gfg_Run()">
+            Háttérkép eltüntetése.
+        </button>
+    </footer>
+</body>
+
+</html>

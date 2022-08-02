@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Szolgáltatások - Novin</title>
+
+    <link rel="icon" href="./photos/favicon.ico">
+    <link rel="stylesheet" href="./stlye.css">
+
+    <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+            var str = "Click on button to change the background color";
+
+            el_up.innerHTML = str;
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+
+            function gfg_Run() {
+                changeColor('black');
+                el_down.innerHTML = "Az oldal háttere megváltozott.";
+            }         
+     </script>
+
+</head>
+
+<body>
+    <header id="top" class="flex">
+        <nav class="flex">
+            <img src="./photos/nav-logo.png" alt="Novin logó" class="logoimg">
+            <ul class="flex">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="szolg.html" class="active">Szolgáltatások</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="kapcs.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#table" class="blokkelkerules">Ugrás a szolgáltatás javaslati táblázatra</a>
+
+
+    <article class="szolg flex">
+        <h1> Szolgáltatások </h1>
+
+        <hr>
+
+        <section>
+            <img src="./photos/Szolgaltatasaink/weblap.jpg" alt="Interaktív weboldal.">
+            <div>
+                <h2> Weboldal készítés </h2>
+                <p> <i>Egyedi igényeknek</i> megfelelő weboldal készítés. </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <img src="./photos/Szolgaltatasaink/marketing.jpg" alt="Kiáltó megafon."> 
+            <div>
+                <h2> Marketing </h2>
+                <p> Marketing megoldások biztosítása <strong>kis- és középvállalatok</strong> számára. <br>
+                    Lásd bővebben a <a href="https://www.haladjunk.hu/digitalis-marketing/online-marketing-elonyei-5-pontban/" target="_blank"> haladjunk.hu </a> oldalán.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <figure>
+                <a target="_blank" href="./photos/Szolgaltatasaink/real1.jpg">
+                        <img src="./photos/Szolgaltatasaink/thumbnail1.png" alt="Szervergépek." class="classImg">
+                </a>  
+                <figcaption>
+                    Szerverterem.
+                </figcaption>
+            </figure>
+            
+
+            <div>
+                <h2> Saját szerver üzemeltetés </h2>
+                <p> <strong>Fizikai</strong> <i>Linux szerver</i> kiépítése és igény esetén üzemeltetése. <strong>Fájl szerver </strong>biztosítását is magába foglalja és az <strong>adat tükrözését</strong> is. <br>
+                    Lásd bővebben a <a href="https://envisioner.hu/mire-jo-egy-szerver/" target="_blank"> envisioner.hu  </a> oldalán.             
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <figure>
+                <img src="./photos/Szolgaltatasaink/cloud.jpg" alt="Cloud szerver működése az elektronikai eszközök között.">
+                <figcaption>Cloud szerver</figcaption>
+            </figure>
+
+            <div>
+                <h2>Virtuális szerver üzemeltetés</h2>
+                <p> <strong> Virtuális</strong> <i> Linux szerver </i> bérlés és üzemeltetés, saját IP-címmel. Ezen tetszőleg szolgáltatásokat (pl. webszerver)
+                futtathat. <br> <br>
+                Előnye, hogy nem kell saját szerver kiépítésére költeni, <strong>a fizikai szerver üzemeltetéséről teljes mértékben mi gondoskodunk! </strong> <br>
+                Lásd bővebben a <a href="https://sybell.hu/a-virtualis-sajat-szerver-elonyei/" target="_blank"> sybell.hu </a> oldalán.
+
+            </p>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <a target="_blank" href="./photos/Szolgaltatasaink/real2.jpg" >
+                <img src="./photos/Szolgaltatasaink/thumbnail2.png" alt="Ügyintéző.">
+            </a>
+            <div>
+                <h2> Informatikai támogatás </h2>
+                <p> Általános jellegű informatikai támogatás <strong>kis- és középvállalkozások </strong> számára. Program installáció, víruseltávolítás.
+                <i>Telefonos segítség sürgős esetekben.</i> <br> <br>
+                Internetes kapcsolat megléte esetén <strong>online segítség</strong>. Számítástechnikai hardver
+                vásárlása esetén <strong>szakvélemény</strong>. Igény esetén <i>probléma-nyilvántartó felület</i>.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        
+
+        <table id="table">
+            <caption>
+                <strong>Szolgáltatás javaslataink</strong>
+                <details>
+                    <summary>Leírás</summary>
+                    <p>Szolgáltatás ajánlásaink kis- és középvállalkozások számára. <br>
+                        A [X]-el jelölteket ajánljuk, míg a []-el jelölteket nem feltétlen. <br>
+                         Az általunk vélt legfontosabb szolgáltatásokat 5-ös fokozattal, míg a legkevésbé fontosat 1-essel jelöltük..</p>
+                </details>
+            </caption>
+
+            <tr>
+                <th></th>
+                <th>Kisvállalkozás</th>
+                <th>Középvállalkozás</th>
+                <th>Fontosság</th>
+            </tr>
+            <tr>
+                <th>Weboldal</th>
+                <td>[x]</td>
+                <td>[x]</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Marketing</th>
+                <td>[x]</td>
+                <td>[x]</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Saját szerver</th>
+                <td>[]</td>
+                <td>[x]</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>Virtuális szerver</th>
+                <td>[x]</td>
+                <td>[x]</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Informatikai támogatás</th>
+                <td>[x]</td>
+                <td>[x]</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </article>
+
+
+    <footer>
+        <a href="#top" class="footertop">Vissza az oldal tetejére</a>
+        <button onclick="gfg_Run()">
+            Háttérkép eltüntetése.
+        </button>    
+    </footer>
+</body>
+
+</html>

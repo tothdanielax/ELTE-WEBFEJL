@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kezdőlap - Novin</title>
+
+    <link rel="icon" href="./photos/favicon.ico">
+    <link rel="stylesheet" href="./stlye.css">
+
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        var str = "Kattints a gombra, hogy eltávolítsd a hátteret";
+
+        el_up.innerHTML = str;
+
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+
+        function gfg_Run() {
+            changeColor('black');
+            el_down.innerHTML = "Az oldal háttere megváltozott.";
+        }         
+    </script>
+
+</head>
+<body>
+    <header id="top" class="flex">
+        <nav class="flex">
+            <img src="./photos/nav-logo.png" alt="Novin logó" class="logoimg">
+            <ul class="flex">
+                <li><a href="index.html" class="active">Kezdőlap</a></li>
+                <li><a href="szolg.html">Szolgáltatások</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="kapcs.html">Kapcsolat</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <a href="#videoo" class="blokkelkerules">Ugrás a szerverről szóló videó megtekintésére</a>
+
+    
+    <a href="rolunk.html" class="flex centerbox"> <img src="./photos/Kezdolap/kep1.png" alt="Beszélgető emberek, képfelirat: Informatikai megoldások kis- és középvállalatok számára" class="oneImg"></a>
+
+    <div class="flex centerbox">
+        <a href="kapcs.html"><img src="./photos/Kezdolap/kapcsolat.png" alt="Szürke hátterű kép, 'Kapcsolat' képfelirattal. " class="twoImgsL"></a>
+        <img src="./photos/Kezdolap/partner.png" alt="Partnereink: TCS, TATA Consultany Services, Mindtree, Infosys, HCL, TechMahindra, Wipro, L&T Infotech" class="twoImgsR">
+    </div>
+
+    <a href="szolg.html" class="flex centerbox"> <img src="./photos/Kezdolap/kep2.png" alt="Író emberek, 'Szolgáltatásaink' képfelirattal." class="oneImg"></a>
+
+ 
+
+    <div class="flex centerbox" id="videoo">
+        <details class="viddesc">
+            <summary> Részletek </summary>
+            <a href="leiras.xhtml" target="_blank"> Videó leírása </a>
+        </details>
+
+        <video controls poster="photos/Kezdolap/poster.png">
+            <source src="./photos/video.mp4" type="video/mp4">
+            <p>A böngésződ nem támogatja a videó lejátszását.</p>
+        </video>
+    </div>
+
+    <footer>
+        <a href="#top" class="footertop">Vissza az oldal tetejére</a>
+        <button onclick="gfg_Run()">
+            Háttérkép eltüntetése.
+        </button>
+    </footer>
+</body>
+</html>
